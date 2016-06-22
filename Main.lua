@@ -3,7 +3,7 @@
 -- Use this function to perform your initial setup
 function setup()
     print("Hello World!")
-    lg = LifeGenerations({1,4,5,6},{2,3,5,6},16,100,20)
+    lg = LifeGenerations({3,4,5},{2},4,100,20)
     parameter.action("Start", function() lg.started = true end)
     parameter.action("Stop",function() lg.started = false end)
     parameter.action("One Step", function() lg:oneStep() end)
